@@ -1,0 +1,55 @@
+@import "../../resource/styles/variables";
+
+.first {
+  display: flex;
+  flex-direction: column;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    display: block;
+    &Title {
+      color: $studio-white-text;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+    &Input {
+      width: 280px;
+      height: 40px;
+      background-color: $studio-dark-element;
+      border-radius: 20px;
+      border: 2px solid $studio-primary-border;
+      color: $studio-white-text;
+      font-size: 16px;
+      padding: 0 20px;
+      outline: none;
+      transition: $studio-transition-03;
+    }
+    &Email {
+      margin: 15px 0;
+      input {
+        width: 100%;
+      }
+    }
+    &Bottom {
+      position: relative;
+    }
+  }
+}
+
+.error {
+  &_message {
+    max-width: 280px;
+    font-size: 14px;
+    color: rgb(255, 149, 149);
+    margin-top: 10px;
+  }
+}

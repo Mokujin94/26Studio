@@ -1,15 +1,13 @@
+import React from 'react';
 
+import style from './functionButton.module.scss';
 
-import React from 'react'
-
-import style from './functionButton.module.scss'
-
-function FunctionButton({children}) {
+function FunctionButton({ children, onClick }) {
   return (
-    <div className={style.button}>
-        <h2 className={style.button__text}>{children}</h2>
-    </div>
-  )
+    <button onClick={onClick} className={style.button}>
+      {children}
+    </button>
+  );
 }
 
-export default FunctionButton
+export default FunctionButton;
